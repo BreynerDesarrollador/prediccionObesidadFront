@@ -1,0 +1,113 @@
+/** Step Wizard */
+.step-wrapper {
+    position: relative;
+}
+
+.step {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.active {
+    opacity: 1;
+    pointer-events: inherit;
+    position: relative;
+    z-index: 1;
+}
+.nav {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.dot {
+    color: black;
+    cursor: pointer;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0 15px;
+    opacity: .4;
+    text-shadow: none;
+    transition: opacity 1s ease,
+    text-shadow 1s ease;
+    will-change: opacity, text-shadow;
+}
+
+.active {
+    color: #0a53be;
+    opacity: 1;
+    text-shadow: 0 0px 8px;
+}
+
+.custom-modal {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-modal-header {
+    background-color: #343a40;
+    color: #fff;
+    padding: 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.custom-modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.custom-close-button {
+    color: #fff;
+    font-size: 24px;
+}
+
+.custom-modal-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.result-label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.result-value {
+    font-size: 18px;
+    color: #28a745;
+}
+
+.recommendations {
+    text-align: left;
+    margin-top: 24px;
+}
+
+.recommendations h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.recommendations li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.recommendations li i {
+    margin-right: 8px;
+    color: #28a745;
+}
